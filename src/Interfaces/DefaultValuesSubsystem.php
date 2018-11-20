@@ -1,4 +1,4 @@
-<?php namespace professionalweb\IntegrationHub\Mapper\Interfaces;
+<?php namespace professionalweb\IntegrationHub\DefaultValues\Interfaces;
 
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Services\Subsystem;
 

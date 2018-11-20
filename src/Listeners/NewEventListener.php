@@ -1,6 +1,6 @@
 <?php namespace professionalweb\IntegrationHub\DefaultValues\Listeners;
 
-use professionalweb\IntegrationHub\Mapper\Interfaces\DefaultValuesSubsystem;
+use professionalweb\IntegrationHub\DefaultValues\Interfaces\DefaultValuesSubsystem;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Events\EventToProcess;
 
 class NewEventListener
