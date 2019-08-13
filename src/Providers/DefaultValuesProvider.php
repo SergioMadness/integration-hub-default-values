@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use professionalweb\IntegrationHub\DefaultValues\Services\DefaultValuesSubsystem;
-use professionalweb\IntegrationHub\Mapper\Interfaces\DefaultValuesSubsystem as IDefaultValuesSubsystem;
+use professionalweb\IntegrationHub\DefaultValues\Interfaces\DefaultValuesSubsystem as IDefaultValuesSubsystem;
 
 class DefaultValuesProvider extends ServiceProvider
 {

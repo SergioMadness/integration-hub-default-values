@@ -1,11 +1,12 @@
 <?php namespace professionalweb\IntegrationHub\DefaultValues\Services;
 
+use Illuminate\Support\Arr;
 use professionalweb\IntegrationHub\DefaultValues\Models\DefaulValuesOptions;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\EventData;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Services\Subsystem;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Models\ProcessOptions;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Models\SubsystemOptions;
-use professionalweb\IntegrationHub\Mapper\Interfaces\DefaultValuesSubsystem as IDefaultValuesSubsystem;
+use professionalweb\IntegrationHub\DefaultValues\Interfaces\DefaultValuesSubsystem as IDefaultValuesSubsystem;
 
 class DefaultValuesSubsystem implements IDefaultValuesSubsystem
 {
@@ -66,7 +67,7 @@ class DefaultValuesSubsystem implements IDefaultValuesSubsystem
                         $value = time();
                         break;
                 }
-                $data[$field] = $value;
+                Arr::set($data, $field, $value);
             }
         }
 
