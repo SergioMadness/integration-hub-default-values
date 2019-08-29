@@ -55,7 +55,7 @@ class DefaultValuesSubsystem implements IDefaultValuesSubsystem
         }
         $data = $eventData->getData();
         foreach ($map as $field => $value) {
-            if (!isset($data[$field])) {
+            if (!Arr::exists($data, $field)) {
                 switch ($value) {
                     case self::CURRENT_DATE:
                         $value = date('Y-m-d');
