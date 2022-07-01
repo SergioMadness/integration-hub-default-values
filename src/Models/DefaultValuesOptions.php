@@ -6,7 +6,7 @@ use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Models\Subsys
  * Subsystem options
  * @package professionalweb\IntegrationHub\DefaultValues\Models
  */
-class DefaulValuesOptions implements SubsystemOptions
+class DefaultValuesOptions implements SubsystemOptions
 {
 
     /**
