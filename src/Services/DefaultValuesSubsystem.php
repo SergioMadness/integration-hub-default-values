@@ -1,7 +1,7 @@
 <?php namespace professionalweb\IntegrationHub\DefaultValues\Services;
 
 use Illuminate\Support\Arr;
-use professionalweb\IntegrationHub\DefaultValues\Models\DefaulValuesOptions;
+use professionalweb\IntegrationHub\DefaultValues\Models\DefaultValuesOptions;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\EventData;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Services\Subsystem;
 use professionalweb\IntegrationHub\IntegrationHubCommon\Interfaces\Models\ProcessOptions;
@@ -13,7 +13,7 @@ class DefaultValuesSubsystem implements IDefaultValuesSubsystem
     /**
      * @var ProcessOptions
      */
-    private $processOptions;
+    private ProcessOptions $processOptions;
 
     /**
      * Set options with values
@@ -36,7 +36,7 @@ class DefaultValuesSubsystem implements IDefaultValuesSubsystem
      */
     public function getAvailableOptions(): SubsystemOptions
     {
-        return new DefaulValuesOptions();
+        return new DefaultValuesOptions();
     }
 
     /**
